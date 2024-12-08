@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4T87o3ypbJ-0M2IzKbBHi6RAJrWY21WsDw&s);
     background-size: cover;
@@ -55,7 +55,7 @@ header {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -87,8 +87,10 @@ section h1 {
 .section_item img {
     height: 100%;
 }
-
-
+.section_item img:hover {
+    scale: 1.1;
+    transition-duration: 0.1s;
+}
 .projects {
     color: white;
     background: black;
@@ -98,9 +100,89 @@ section h1 {
     transform: scale(1.05);
     cursor: pointer;
 }
-
+.Kts{
+    display: flex;
+    width: 8vw;
+    height: 100vh;
+    background-color: gray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 2px solid black;
+}
+.Kt1{
+    width: 5vw;
+    height: 5vw;
+    background-color: red;
+    border: 2px solid black;
+}
+.Kt2{
+    width: 5vw;
+    height: 5vw;
+    background-color: orange;
+    border: 2px solid black;
+}
+.Kt3{
+    width: 5vw;
+    height: 5vw;
+    background-color: yellow;
+    border: 2px solid black;
+}
+.Kt4{
+    width: 5vw;
+    height: 5vw;
+    background-color: green;
+    border: 2px solid black;
+}
+.Kt5{
+    width: 5vw;
+    height: 5vw;
+    background-color: blue;
+    border: 2px solid black;
+}
+.Kt6{
+    width: 5vw;
+    height: 5vw;
+    background-color: purple;
+    border: 2px solid black;
+}
+.Kt7{
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    border: 2px solid black;
+}
+.Kt8{
+    width: 5vw;
+    height: 5vw;
+    background-color: #333333;
+    border: 2px solid black;
+}
+.Ktz{
+    width: 5vw;
+    height: 5vw;
+    background-color: #222222;
+    border: 2px solid black;
+}
+.MainWnd{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #444444;
+}
+.MainField{
+    width: 92vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(15,1fr);
+    gap: 1px;
+}
 footer {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     position: relative;
     background-image: url(footer_bg.png);
